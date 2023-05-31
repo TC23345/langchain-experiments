@@ -15,6 +15,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
+      - name: Azure Login
+        uses: Azure/login@v1
+
       - uses: actions/checkout@v2
 
       - name: Set up Python version
@@ -61,3 +65,4 @@ jobs:
           app-name: 'slack-gpt-app-4'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E404B8A1FF9942DEAA02250DDA19A61C }}
+
