@@ -63,6 +63,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'slack-gpt-app'
+          app-name: 'slack-gpt-app-4'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_490AB47F40CF4E94847F3598F17D4071 }}
