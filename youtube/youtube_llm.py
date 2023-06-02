@@ -43,7 +43,7 @@ def get_response_from_query(db, query, k=4):
         Answer the following question: {question}
         By searching the following video transcript: {docs}
         
-        Only use the factual information from the transcript to answer the question.
+        Only use the factual information from the transcript to provide a bulleted summary of key takeaways, please title the summary in an H2 heading.
         
         If you feel like you don't have enough information to answer the question, say "I don't know".
         
@@ -59,7 +59,7 @@ def get_response_from_query(db, query, k=4):
 
 
 # Example usage:
-video_url = "https://www.youtube.com/watch?v=L_Guz73e6fw"
+video_url = "https://www.youtube.com/watch?v=yG_5f6ZveRY"
 db = create_db_from_youtube_video_url(video_url)
 
 query = "What are they saying about Microsoft?"

@@ -8,9 +8,6 @@ chromadb
 tiktoken
 faiss-cpu
 wikipedia
-python-dotenv
-langchain
-openai
 slack-sdk 
 slack-bolt 
 flask

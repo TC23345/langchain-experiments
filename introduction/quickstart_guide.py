@@ -16,7 +16,7 @@ load_dotenv(find_dotenv())
 # --------------------------------------------------------------
 
 llm = OpenAI(model_name="text-davinci-003")
-prompt = "Write a poem about python and ai"
+prompt = "Please generate a list of reasons why langchain agents are useful for startup companies"
 print(llm(prompt))
 
 
@@ -29,7 +29,7 @@ prompt = PromptTemplate(
     template="What is a good name for a company that makes {product}?",
 )
 
-prompt.format(product="Smart Apps using Large Language Models (LLMs)")
+prompt.format(product="Smart Apps for lawyers using Large Language Models (LLMs)")
 
 # --------------------------------------------------------------
 # Chains: Combine LLMs and prompts in multi-step workflows
@@ -42,7 +42,7 @@ prompt = PromptTemplate(
 )
 
 chain = LLMChain(llm=llm, prompt=prompt)
-print(chain.run("AI Chatbots for Dental Offices"))
+print(chain.run("AI Chatbots for Law Firms"))
 
 
 # --------------------------------------------------------------
